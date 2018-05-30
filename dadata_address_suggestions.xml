@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.1" method="upgrade" group="system">
+	<name>DaData.ru address suggestions for Hikashop Plugin</name>
+	<creationDate>28 may 2018</creationDate>
+	<version>1.0.0</version>
+	<author>inscriptios</author>
+	<authorEmail>inscriptios@gmail.com</authorEmail>
+	<authorUrl>https://github.com/inscriptios</authorUrl>
+	<copyright>(C) 2018 inscriptios. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>PLG_DADATA_ADDRESS_SUGGESTIONS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="dadata_address_suggestions">dadata_address_suggestions.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_dadata_address_suggestions.ini</language>
+		<language tag="en-GB">en-GB.plg_system_dadata_address_suggestions.sys.ini</language>
+		<language tag="ru-RU">ru-RU.plg_system_dadata_address_suggestions.ini</language>
+		<language tag="ru-RU">ru-RU.plg_system_dadata_address_suggestions.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="full_address_field_id" type="text"
+          size="50"
+          default="address_street"
+          description="PLG_DADATA_ADDRESS_SUGGESTIONS_FULL_ADDRESS_FIELD_ID_DESC"
+          label="PLG_DADATA_ADDRESS_SUGGESTIONS_FULL_ADDRESS_FIELD_ID_LABEL"
+        />
+				<field name="post_code_field_id" type="text"
+          size="50"
+          default="address_post_code"
+          description="PLG_DADATA_ADDRESS_SUGGESTIONS_POST_CODE_FIELD_ID_DESC"
+          label="PLG_DADATA_ADDRESS_SUGGESTIONS_POST_CODE_FIELD_ID_LABEL"
+        />
+				<field name="token" type="text"
+          size="50"
+          default=""
+          description="PLG_DADATA_ADDRESS_SUGGESTIONS_TOKEN_DESC"
+          label="PLG_DADATA_ADDRESS_SUGGESTIONS_TOKEN_LABEL"
+        />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
